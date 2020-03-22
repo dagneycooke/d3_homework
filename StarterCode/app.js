@@ -88,6 +88,14 @@ d3.csv("data.csv").then(function(hwData) {
       .attr("class", "axisText")
       .text("In Poverty (%)");
 
+    chartGroup.append("text")
+        .attr("x", (width / 2)-30)             
+        .attr("y", 0 - (margin.top / 2)+5)
+        .attr("text-anchor", "middle")  
+        .style("font-size", "20px") 
+
+        .text("Poverty and Healthcare Status");
+
   }).catch(function(error) {
     console.log(error);
   });
